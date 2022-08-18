@@ -4,6 +4,7 @@ import axios from "axios";
 function App() {
   const [student, setStudent] = useState(null);
     
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(async () => {
     const API_URL = process.env.REACT_APP_BASE_URL;
     try {
