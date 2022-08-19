@@ -4,7 +4,7 @@ import axios from "axios";
 function App() {
   const [student, setStudent] = useState(null);
 
-  console.log("teste deploy workflow")
+  console.log("novo teste deploy workflow")
     
   useEffect(async () => {
     const API_URL = process.env.REACT_APP_BASE_URL;
