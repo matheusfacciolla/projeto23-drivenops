@@ -7,6 +7,7 @@ app.use(cors());
 app.use(json());
 
 app.get("/students", async (req: Request, res: Response) => {
+  console.log("test pull request workflow");
   const students = await prisma.student.findMany();
   res.send(students);
 });
